@@ -1,34 +1,39 @@
 /*Simulador pago en cuotas*/
 
 /*Calcular cuotas sobre un producto determinado*/
+//
+/*
+function Productos(nombre,marca,precio,vendido){
+    this.nombre = nombre;
+    this.marca = marca;
+    this.precio = precio;
+    this.vendido = false;
+};
 
-let nombreProducto = (prompt("Ingrese el nombre del producto"));
+let producto1 = new Productos("Procesador I9","Intel",3500);
 
-let precio = parseInt(prompt("Ingrese el precio final del producto"));
+let producto2 = new Productos("Mouse G302","Logitech",3000);
 
-let cuotas = parseInt(prompt("Ingrese las cuotas a pagar por mes"));
+let producto3 = new Productos("Motherboard Z390","Aorus";11000);
+*/
 
-if((cuotas <= 12) && (cuotas > 0)){
-    let mensaje = alert(`las cuotas ingresadas son ${cuotas}`);
-    let operacion = parseInt(precio / cuotas);
-    resultado = alert(`El precio de las cuotas del ${nombreProducto} es de $ ${operacion}`);
-    let compra = prompt("Deseas comprar el producto");
-    switch(compra){
-        case "si":
-            alert("El articulo fue comprado con exito");
-            alert(`Pagaras ${cuotas} cuotas de $ ${operacion}`);
-            break;
-        case "no":
-            alert("No has comprado el producto, vuelve a intentar");
-            break;   
-        default:
-            alert("No ingresaste una opcion valida");    
-    }
-}else{
-    alert("No ingresaste la cantidad de cuotas");
-    alert("El articulo no pudo ser vendido");
+const productos = {
+    procesador:[
+        {nombre:"I9",marca:"Intel",precio:3500},
+    ],
+    mouse: [
+        {nombre:"G302",marca:"Logitech",precio:3000},
+    ],
+    motherboard:[
+        {nombre:"Z390",marca:"Aorus",precio:11000}  
+    ],
 }
 
+const agregar = productos.procesador.push("vendido" + ":" + false);
+
+const quitar = productos.procesador.pop("vendido" + ":" + false);
+
+console.log(productos);
 
 
 

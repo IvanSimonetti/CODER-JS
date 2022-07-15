@@ -35,18 +35,15 @@ let resultado = calculadora(precio1,precio2,operacion);
 
 alert(resultado);
 
-/*Objetos y arreglos*/
+/*Objetos*/
 
 const productos = {
-    procesador:[
-        {nombre:"I9",marca:"Intel",precio:3500},
-    ],
-    mouse: [
-        {nombre:"G302",marca:"Logitech",precio:3000},
-    ],
-    motherboard:[
-        {nombre:"Z390",marca:"Aorus",precio:11000}  
-    ],
+    
+    procesador: {nombre:"I9",marca:"Intel",precio:3500},
+    
+    mouse: {nombre:"G302",marca:"Logitech",precio:3000},
+    
+    motherboard: {nombre:"Z390",marca:"Aorus",precio:11000},
 }
 
-console.log(productos.procesador.includes("Intel"));
+console.log(productos.procesador.marca.includes("Intel"));

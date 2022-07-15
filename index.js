@@ -1,21 +1,41 @@
-/*Simulador pago en cuotas*/
+/*Simulador carrito de compras*/
 
-/*Calcular cuotas sobre un producto determinado*/
-//
-/*
-function Productos(nombre,marca,precio,vendido){
-    this.nombre = nombre;
-    this.marca = marca;
-    this.precio = precio;
-    this.vendido = false;
-};
+function calculadora(precio1,precio2,operacion){
+    if(Number(precio1) && Number(precio2)){
+        switch(operacion){
+            case "+":
+                return precio1 + precio2;
 
-let producto1 = new Productos("Procesador I9","Intel",3500);
+            case "-":
+                return precio1 - precio2;
 
-let producto2 = new Productos("Mouse G302","Logitech",3000);
+            case "*":
+                return precio1 * precio2;
 
-let producto3 = new Productos("Motherboard Z390","Aorus";11000);
-*/
+            case "/":
+                return precio1 / precio2;
+
+            default:
+                alert("Ingresa un operador");
+                break;
+        
+        }   
+    }
+}
+
+let producto = prompt("Ingrese el nombre del producto a comprar");
+
+let precio1 = parseInt(prompt("Ingrese el precio del primer articulo"));
+
+let precio2 = parseInt(prompt("Ingrese el precio del segundo articulo"));
+
+let operacion = prompt("Ingrese la operacion a realizar");
+
+let resultado = calculadora(precio1,precio2,operacion);
+
+alert(resultado);
+
+/*Objetos y arreglos*/
 
 const productos = {
     procesador:[
@@ -29,11 +49,4 @@ const productos = {
     ],
 }
 
-const agregar = productos.procesador.push("vendido" + ":" + false);
-
-const quitar = productos.procesador.pop("vendido" + ":" + false);
-
-console.log(productos);
-
-
-
+console.log(productos.procesador.includes("Intel"));

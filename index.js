@@ -1,49 +1,28 @@
-/*Simulador carrito de compras*/
 
-function calculadora(precio1,precio2,operacion){
-    if(Number(precio1) && Number(precio2)){
-        switch(operacion){
-            case "+":
-                return precio1 + precio2;
+let saludo = document.getElementById("contenedorTitulo");
 
-            case "-":
-                return precio1 - precio2;
+let menu = prompt("Ingresa el menu deseado");
 
-            case "*":
-                return precio1 * precio2;
+let contenedorTitulo = document.getElementById("listaProductos");
 
-            case "/":
-                return precio1 / precio2;
+let parrafo = document.createElement("p");
 
-            default:
-                alert("Ingresa un operador");
-                break;
-        
-        }   
-    }
+parrafo.innerHTML = "<p>Productos Quizatech</p>";
+
+contenedorTitulo.append(parrafo);
+
+
+if(menu === "inicio"){
+   saludo.innerHTML = "<h1>Bienvenido al inicio</h1>";
+   saludo.className = "gris"; 
+}else if(menu === "carrito"){
+    saludo.innerHTML = "<h1>Bienvenido al carrito</h1>";
+    saludo.className = "azul";
+}else{ 
+    saludo.innerHTML = "<h1>Bienvenido al DOM</h1>";
 }
 
-let producto = prompt("Ingrese el nombre del producto a comprar");
 
-let precio1 = parseInt(prompt("Ingrese el precio del primer articulo"));
 
-let precio2 = parseInt(prompt("Ingrese el precio del segundo articulo"));
 
-let operacion = prompt("Ingrese la operacion a realizar");
 
-let resultado = calculadora(precio1,precio2,operacion);
-
-alert(resultado);
-
-/*Objetos*/
-
-const productos = {
-    
-    procesador: {nombre:"I9",marca:"Intel",precio:3500},
-    
-    mouse: {nombre:"G302",marca:"Logitech",precio:3000},
-    
-    motherboard: {nombre:"Z390",marca:"Aorus",precio:11000},
-}
-
-console.log(productos.procesador.marca.includes("Intel"));

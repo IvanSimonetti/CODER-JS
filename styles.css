@@ -1,0 +1,13 @@
+img{
+    width: 300px;
+    height: 250px;
+}
+
+button{
+    color: blue;
+}
+
+.rojo{
+    background-color: red;
+    color: white;
+}

@@ -4,16 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>DOM</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Incorporar Eventos</title>
 </head>
 <body>
+    <header>
+        <nav> 
+              <li>
+                <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</a>
+                <ul>
+                  <li>
+                      <a href="index.html">Inicio</a>
+                 </li>
+                  <li>
+                      <a href="html/productos.html">Productos</a>
+                 </li>
+                  <li>
+                      <a href="html/pc-armadas.html">Pc Armadas</a>
+                 </li>
+                  <li>
+                      <a  href="html/novedades.html">Novedades</a>
+                 </li>
+                  <li>
+                      <a href="html/contacto.html">Contacto</a></li>
+                  <li>
+                      <a href="html/ingresar.html">Ingresar</a>
+                 </li>
+                </ul>
+              </li> 
+       </nav>
+    </header>
+    </header>
+    <div id="formulario">
+        <form id="datos">
+            <input type="text">
+            <input type="text">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
     <div id="contenedorTitulo"></div>
     <div>
-        <ul id="listaProductos">
-            <li class="productos">Procesador</li>
-            <li class="productos">Mouse</li>
-            <li class="productos">Motherboard</li>
+        <ol id="listaProductos">
+            <div id="botonCompra">
+                <li>Procesador</li>
+                <img src="./img/procesador.jpg" alt="">
+                <p>$3500</p>
+                <button>Comprar</button>
+            </div>
+            <div id="botonCompra">
+                <li>Mouse</li>
+                <img src="./img/mouse.png" alt="">
+                <p>$3000</p>
+                <button>Comprar</button>
+            </div>
+            <div id="botonCompra">
+                <li>Motherboard</li>
+                <img src="./img/mother.jpg" alt="">
+                <p>$11000</p>
+                <button>Comprar</button>
+            </div>
         </ul>
     </div>    
     <script src="index.js"></script>

@@ -1,13 +1,15 @@
-img{
-    width: 300px;
-    height: 250px;
+.rojo{
+    background-color: red;
+    color: #ffffff;
+    width: 200px;
+    font-size: large;
 }
 
-button{
+.azul{
     color: blue;
 }
 
-.rojo{
-    background-color: red;
-    color: white;
+img{
+    height: 300px;
+    width: 300px;
 }

@@ -1,0 +1,5 @@
+[
+    { "id": 1, "pos":"productosUno","boton":"botonCompraInicioUno","nombre":"Motherboard","precio": 11000,"img":"../img/mother.jpg","vendido":false},
+    { "id": 2, "pos":"productosDos","boton":"botonCompraInicioDos","nombre":"Teclado","precio": 1100,"img":"../img/teclado.png","vendido":false},
+    { "id": 3, "pos":"productosTres","boton":"botonCompraInicioTres","nombre":"Memoria Ram","precio": 4200,"img":"../img/ram1.jpg","vendido":false}
+]

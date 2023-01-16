@@ -1,0 +1,9 @@
+
+[
+    { "id": 1, "pos":"productosUno","boton":"botonCompraUno","nombre":"Motherboard","precio": 11000,"img":"../img/mother.jpg","vendido":false},
+    { "id": 2, "pos":"productosDos","boton":"botonCompraDos","nombre":"Teclado","precio": 1100,"img":"../img/teclado.png","vendido":false},
+    { "id": 3, "pos":"productosTres","boton":"botonCompraTres","nombre":"Memoria Ram","precio": 4200,"img":"../img/ram1.jpg","vendido":false},
+    { "id": 4, "pos":"productosCuatro","boton":"botonCompraCuatro","nombre":"Disco","precio": 7200,"img":"../img/discok.jpg","vendido":false},
+    { "id": 5, "pos":"productosCinco","boton":"botonCompraCinco","nombre":"Mousepad","precio":2800,"img":"../img/mousepad.jpg","vendido":false},
+    { "id": 6, "pos":"productosSeis","boton":"botonCompraSeis","nombre":"Pc Armada","precio":70000,"img":"../img/pc1.png","vendido":false}
+]
